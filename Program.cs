@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project001
+namespace ConsoleApp1
 {
     class Program
     {
@@ -12,12 +12,15 @@ namespace Project001
         {
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
-            int n = Convert.ToInt32(Console.ReadLine());
-            int c = (a * 100)*2;
-            int d = (b * 2);
-            int e = (c + d);
-            int resultMod = (e % 1100);
-            Console.WriteLine((e/100) + "" + resultMod);
+            int c = Convert.ToInt32(Console.ReadLine());
+            int d = Convert.ToInt32(Console.ReadLine());
+            if (a == c || b == d && a != c || b != d)
+            {
+                Console.WriteLine("YES");
+            } else
+            {
+                Console.WriteLine("NO");
+            }
         }
     }
 }
